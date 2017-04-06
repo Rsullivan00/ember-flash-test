@@ -1,0 +1,5 @@
+{{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash}}
+{{/each}}
+<button {{action 'addFlash'}}>Add flash</button>
+{{outlet}}
